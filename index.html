@@ -2,19 +2,16 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title> Home | DapperMen</title>
+	<title> Home | DapperMen</title> 
 	<link rel="stylesheet" href="themes/dappertheme1.min.css" />
 	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
-	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
-	<link rel="stylesheet" href="css/chapter8.css" />
-	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-
-		<script src="https://cdn.jsdelivr.net/picturefill/2.3.1/picturefill.min.js"></script>
-        <script src="js/lightgallery-all.min.js"></script>
-        <script src="js/jquery.mousewheel.min.js"></script>
-
+	<link rel="stylesheet" href="themes/jquery.mobile.structure-1.4.5.min.css" />
+	<link rel="stylesheet" href="css/jquery.mobile.carousel.css">
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/jquery.mobile-1.4.5.min.js"></script>
+	<script src="swipe-page.js"></script>
 	
+
 
 </head>
 <body>
@@ -33,25 +30,24 @@
 			Feel free to view and give us your feedback!</p>
 
 			<div>
-				<ul data-role="listview" data-inset="true" data-ajax="false">
-					<li><a href="#business"><img src="images/thumb/thumb-1.jpg" class="ui-li-thumb">Business Style</a></li>
-					<li><a href="#street"><img src="images/thumb/thumb-1.jpg" class="ui-li-thumb">Street Fashion</a></li>
-					<li><a href="#sport" rel="external"><img src="images/thumb/thumb-1.jpg" class="ui-li-thumb">Sports & Outdoors</a></li>
-					<li><a href="#trad" rel="external"><img src="images/thumb/thumb-1.jpg" class="ui-li-thumb">Trad</a></li>
+				<ul data-role="listview" data-inset="true" data-ajax="true">
+					<li><a href="business.html"><img src="images/full/1-1600.jpg" class="ui-li-thumb">Business Style</a></li>
+					<li><a href="street.html"><img src="images/full/2-1600.jpg" class="ui-li-thumb" >Street Fashion</a></li>
+					<li><a href="sport.html" rel="external"><img src="images/full/4-1600.jpg" class="ui-li-thumb">Sports & Outdoors</a></li>
+					<li><a href="#trad.html" rel="external"><img src="images/full/13-1600.jpg" class="ui-li-thumb">Trad</a></li>
 				</ul>
-			</div>
+			</div>	
 
+    			
 			
 		</div><!-- /content -->
 
 			
-
-
 		<div data-role="footer" data-position="fixed">
 			<div data-role="navbar">
 				<ul>
 					<li><a href="#info" class="ui-btn ui-shadow ui-btn-icon-left ui-icon-info" data-transition="pop">info</a></li>
-					<li><a href="#home">DapperMen Style</a></li>
+					<li><a href="#home.html">DapperMen Style</a></li>
 					<li><a href="#feedback" class="ui-btn ui-shadow ui-btn-icon-right ui-icon-mail">Feedback</a></li>
 				</ul>
 			</div>
@@ -71,7 +67,7 @@
 		<div data-role="footer" data-position="fixed">
 			<div data-role="navbar">
 				<ul>
-					<li><a href="#home">DapperMen<sup>TM</sup></a></li>
+					<li><a href="index.html">DapperMen<sup>TM</sup></a></li>
 				</ul>
 			</div>
 		</div>
@@ -79,118 +75,7 @@
 
 	
 
-	<div data-role="page" id="business" class="gallery-page">
-		<div data-role="header" data-position="fixed" class="gallery-page">
-			<a href="#" data-rel="back" data-icon="back" class="ui-btn-left"></a>
-				<h1>Business Style</h1>
-			<a href="#" data-icon="gear" class="ui-btn-right"></a>
-		</div><!-- header -->
-		<div role="main" class="ui-content">
-			<ul class="gallery">
-				<li><a href="images/full/1-600.jpg" rel="external"><img src="images/thumb/thumb-1.jpg" alt="001" /></a></li>
-				<li><a href="images/full/2-1600.jpg" rel="external"><img src="images/thumb/thumb-2.jpg" alt="002" /></a></li>
-				<li><a href="images/full/4-1600.jpg" rel="external"><img src="images/thumb/thumb-4.jpg" alt="003" /></a></li>
-				<li><a href="images/full/13-1600.jpg" rel="external"><img src="images/thumb/thumb-13.jpg" alt="026" /></a></li>
-			</ul>
-		</div><!-- /content-->
-		
-		<div data-role="footer" data-position="fixed" >
-			<div data-role="navbar">
-				<ul>
-					<li><a href="#" data-rel="back" class="ui-btn ui-btn-icon-left ui-icon-arrow-l">Back</a></li>
-					<li><a href="#">Business Style</a></li>
-					<li><a href="#home" class="ui-btn ui-shadow ui-btn-icon-right ui-icon-home">Home</a></li>
-				</ul>
-			</div><!-- /navbar -->
-		</div><!-- footer -->
-	</div><!-- /page -->
-
-	<div data-role="page" id="street" class="gallery-page">
-		<div data-role="header" data-position="fixed" class="gallery-page">
-		<!--<div class="logoContainer"><a href="#home"><img class="logo" src="images/logo.png" alt="Dappermen" border="0" /></a></div>-->
-			<a href="#home" data-icon="home" class="ui-btn-left"></a>
-				<h1>Street Fashion</h1>
-			<a href="#" data-icon="gear" class="ui-btn-right"></a>
-		
-	</div><!--header -->
-	<div role="main" class="ui-content">
-		<ul class="gallery">
-				<li><a href="images/full/1-600.jpg" rel="external"><img src="images/thumb/thumb-1.jpg" alt="001" /></a></li>
-				<li><a href="images/full/2-1600.jpg" rel="external"><img src="images/thumb/thumb-2.jpg" alt="002" /></a></li>
-				<li><a href="images/full/4-1600.jpg" rel="external"><img src="images/thumb/thumb-4.jpg" alt="003" /></a></li>
-				<li><a href="images/full/13-1600.jpg" rel="external"><img src="images/thumb/thumb-13.jpg" alt="026" /></a></li>
-		</ul>
-		
-	</div><!-- /content -->
-
-	<div data-role="footer" data-position="fixed">
-		<div data-role="navbar">
-			<ul>
-					<li><a href="#" data-rel="back" class="ui-btn ui-btn-icon-left ui-icon-arrow-l">Back</a></li>
-					<li><a href="#street">Street</a></li>
-					<li><a href="#home" class="ui-btn ui-shadow ui-btn-icon-right ui-icon-home">Home</a></li>
-				</ul>
-		</div><!-- /navbar -->
 	
-		</div><!-- /footer -->
-
-	</div><!-- /page -->
-
-
-	<div data-role="page" id="sport" class="gallery-page">
-		<div data-role="header" data-position="fixed" class="gallery-page">
-			<a href="#home" data-icon="home" class="ui-btn-left">
-				
-			</a><h1>Sports & Outdoors</h1>
-			<a href="#" data-icon="gear" class="ui-btn-right"></a>
-		 </div><!-- /header -->
-
-		<div role="main" class="ui-content">
-			<ul class="gallery">
-				<li><a href="images/full/1-600.jpg" rel="external"><img src="images/thumb/thumb-1.jpg" alt="001" /></a></li>
-				<li><a href="images/full/2-1600.jpg" rel="external"><img src="images/thumb/thumb-2.jpg" alt="002" /></a></li>
-				<li><a href="images/full/4-1600.jpg" rel="external"><img src="images/thumb/thumb-4.jpg" alt="003" /></a></li>
-				<li><a href="images/full/13-1600.jpg" rel="external"><img src="images/thumb/thumb-13.jpg" alt="026" /></a></li>
-			</ul>
-		</div><!-- /content-->
-	
-		<div data-role="footer" data-position="fixed">
-			<div data-role="navbar">
-				<ul>
-					<li><a href="#" data-rel="back" class="ui-btn ui-btn-icon-left ui-icon-arrow-l">Back</a></li>
-					<li><a href="#sport">Sports & Outdoors</a></li>
-					<li><a href="#home" class="ui-btn ui-shadow ui-btn-icon-right ui-icon-home">Home</a></li>
-				</ul>
-			</div><!-- /navbar -->
-		</div><!-- footer -->
-	</div><!-- /page -->
-
-	<div data-role="page" id="trad" class="gallery-page">
-		<div data-role="header" data-position="fixed" class="gallery-page">
-			<a href="#home" data-icon="home" class="ui-btn-left"></a>
-			<h1>Trad</h1>
-			<a href="#" data-icon="gear" class="ui-btn-right"></a>
-		 </div><!-- /header -->
-
-		<div role="main" class="ui-content">
-			<ul class="gallery">
-				<li><a href="images/full/1-600.jpg" rel="external"><img src="images/thumb/thumb-1.jpg" alt="001" /></a></li>
-				<li><a href="images/full/2-1600.jpg" rel="external"><img src="images/thumb/thumb-2.jpg" alt="002" /></a></li>
-				<li><a href="images/full/4-1600.jpg" rel="external"><img src="images/thumb/thumb-4.jpg" alt="003" /></a></li>
-				<li><a href="images/full/13-1600.jpg" rel="external"><img src="images/thumb/thumb-13.jpg" alt="026" /></a></li>
-			</ul>
-		</div><!-- /content-->
-	
-		<div data-role="footer" data-position="fixed">
-			<div data-role="navbar">
-				<ul>
-					<li><a href="#" data-rel="back" class="ui-btn ui-btn-icon-left ui-icon-arrow-l">Back</a></li>
-					<li><a href="#trad">Trad</a></li>
-					<li><a href="#home" class="ui-btn ui-shadow ui-btn-icon-right ui-icon-home">Home</a></li>
-				</ul>
-			</div><!-- /navbar -->
-		</div><!-- footer -->
-	</div><!-- /page -->
 	
 
 
